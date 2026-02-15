@@ -1,4 +1,4 @@
-# 🛒 CRUDS Product Management System
+# 🛒 Product Management System (CRUDS)
 
 🌐 **Live Demo:**  
 👉 https://abdelfatahh1.github.io/CRUDS/
