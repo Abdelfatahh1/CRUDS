@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CRUDS</h1>
+        <p>CREAT - READ - UPDATE - DELETE - SEARCH</p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="data-create">
+          <div class="title">
+            <input type="text" name="title" id="" placeholder="title" title />
+          </div>
+          <div class="price">
+            <input
+              onkeyup="getPrice()"
+              type="number"
+              name="price"
+              id=""
+              placeholder="price"
+              price
+            />
+            <input
+              onkeyup="getPrice()"
+              type="number"
+              name="taxes"
+              id=""
+              placeholder="taxes"
+              taxes
+            />
+            <input
+              onkeyup="getPrice()"
+              type="number"
+              name="ads"
+              id=""
+              placeholder="ads"
+              ads
+            />
+            <input
+              onkeyup="getPrice()"
+              type="number"
+              name="discount"
+              id=""
+              placeholder="discount"
+              discount
+            />
+            <span class="total">Total : <span></span></span>
+          </div>
+          <div class="count">
+            <input type="number" name="count" id="" placeholder="count" count />
+          </div>
+          <div class="category">
+            <input
+              type="text"
+              name="category"
+              id=""
+              placeholder="category"
+              category
+            />
+          </div>
+          <button class="create-btn active">Create</button>
+          <button class="update-btn">Update</button>
+        </div>
+
+        <div class="data-search">
+          <div class="search">
+            <input type="search" name="" id="" placeholder="Search" />
+          </div>
+          <div class="search-btns">
+            <button class="search-title">Search By Title</button>
+            <button class="search-category">Search By Category</button>
+          </div>
+        </div>
+
+        <div class="data-delete">
+          <button>Delete All <span>( 0 )</span></button>
+        </div>
+        <div class="table-container">
+          <table class="data-read">
+            <thead>
+              <tr class="header-info">
+                <th id>ID</th>
+                <th title>TITLE</th>
+                <th price>PRICE</th>
+                <th taxes>TAXES</th>
+                <th ads>ADS</th>
+                <th discount>DISCOUNT</th>
+                <th total>TOTAL</th>
+                <th category>CATEGORY</th>
+                <th update>UPDATE</th>
+                <th delete>DELETE</th>
+              </tr>
+            </thead>
+            <tbody class="items">
+              <tr></tr>
+              <!-- يمكنك إضافة صفوف البيانات هنا -->
+            </tbody>
+          </table>
+        </div>
+
+        <!-- <div class="data-read">
+          <div class="header-info">
+            <span id>ID</span>
+            <span title>TITLE</span>
+            <span price>PRICE</span>
+            <span taxes>TAXES</span>
+            <span ads>ADS</span>
+            <span discount>DISCOUNT</span>
+            <span total>TOTAL</span>
+            <span category>CATEGORY</span>
+            <span update>UPDATE</span>
+            <span delete>DELETE</span>
+          </div>
+          <div class="items"></div>
+        </div> -->
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

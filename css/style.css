@@ -1,0 +1,168 @@
+:root {
+  --padding: 15px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #222222;
+}
+input {
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  color: #4b4b4b;
+  background-color: #111111;
+  width: 80%;
+  padding: var(--padding);
+  transition: 0.3s;
+  margin: auto;
+  display: block;
+}
+input:focus {
+  transform: scale(1.1);
+  color: white;
+}
+button {
+  color: white;
+  background-color: #290765;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 70%;
+  padding: 13px;
+  transition: 0.3s;
+  margin: auto;
+  cursor: pointer;
+}
+button:hover {
+  scale: 1.1;
+  background-color: blueviolet;
+}
+header {
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+}
+header h1 {
+  font-weight: bold;
+}
+.data-create {
+  margin-bottom: 15px;
+}
+.data-create > div {
+  margin-bottom: 15px;
+}
+.data-create .price {
+  display: flex;
+  /* justify-content:space-between; */
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15px;
+}
+.data-create .price input {
+  margin-right: 15px;
+  margin-left: 0;
+  width: calc((100% / 5));
+}
+.data-create .price span.total {
+  background-color: blue;
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+}
+.data-create button {
+  display: none;
+}
+.data-search {
+  margin-bottom: 15px;
+}
+.data-search .search-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.data-search .search-btns button {
+  width: 48%;
+}
+
+.data-delete {
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+.data-delete button {
+  width: 100%;
+}
+/* .data-read{
+    width:70%;
+    margin: auto;
+    overflow-x: auto;
+}
+
+.data-read  div span{
+    width:100px;
+    margin:auto;
+}
+.data-read .header-info,.items .item{
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color:white;
+    border-top: 1px solid white;
+    padding:var(--padding);
+    width:100%;
+}
+
+.data-create .active{
+    display:block;
+} */
+.table-container {
+  width: 70%;
+  margin: auto;
+  overflow-x: auto;
+}
+.data-read {
+  width: 100%;
+  min-width: 1000px; /* مهم جدا عشان يجبر الجدول يعمل scroll */
+  border-collapse: collapse;
+  color: white;
+  text-align: center; /* يخلي فيه scroll */
+}
+
+/* مهم جدا */
+.data-read .table-wrapper {
+  min-width: 900px; /* عرض افتراضي يمنع تكسير التصميم */
+}
+
+.data-read div span {
+  width: 100px;
+  margin: auto;
+}
+
+.data-read .header-info,
+.data-read .items .item {
+  display: grid;
+  grid-template-columns: repeat(10, minmax(100px, 1fr));
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  border-top: 1px solid white;
+  padding: var(--padding);
+}
+
+.data-create .active {
+  display: block;
+}
